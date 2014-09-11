@@ -15,7 +15,7 @@ SEC_SEP_B=$'\ue0b2'
 
 
 SEC_A_FG="grey"
-SEC_A_BG="green"
+SEC_A_BG="${host_color}"
 SECTION_A="%K{${SEC_A_BG}}%{$fg[${SEC_A_FG}]%}%n@%m%{$reset_color%}%F{${SEC_A_BG}}"
 
 SEC_B_FG="white"
