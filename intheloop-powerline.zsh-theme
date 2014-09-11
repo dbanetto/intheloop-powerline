@@ -7,11 +7,11 @@ if [ -n "$SSH_CLIENT" ]; then
 fi
 PROMPT='
 ${SECTION_A}${SECTION_B}${SECTION_C}$(git_prompt_info)$(git_remote_status)${SECTION_END}
-%{$fg_bold[cyan]%}%{$reset_color%} '
+%{$fg_bold[cyan]%}${SEC_SEP}%{$reset_color%} '
 RPROMPT='${return_status}%{$reset_color%}'
 
 SEC_SEP=$'\ue0b0'
-
+SEC_SEP_B=$'\ue0b2'
 
 
 SEC_A_FG="grey"
